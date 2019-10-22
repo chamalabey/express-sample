@@ -1,13 +1,14 @@
 const express = require('express')
 const app = express()
 
+	var response = 'Hello ';
 
 // This is out apps base route. Any request to localhost:3000/
 // is handled here
 app.get('/', function(req, res) {
 
 	// Start our reponse string
-	var response = 'Hello ';
+
 
 	// Lets fetch our username for somewhere
 	getUserName(function(err, name) {
